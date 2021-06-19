@@ -1,0 +1,306 @@
+/*
+Author: Antoine Sorin
+Version: 1
+*/
+
+body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td{ 
+		margin:0; 
+		padding:0;
+}
+
+
+body {
+    background: radial-gradient(#6a1010, #bc2929);       
+    text-align:center;                                       
+    font-family: 'Quicksand', tahoma;
+    color:#FFF;                                            
+}
+
+header {
+    margin-top:50px;
+    font-size:18px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+ #logo {
+    width:250px;                                              
+    height:231px;;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+    
+    }
+
+h1 {
+    font-family: 'Carter One', tahoma;
+    text-transform:uppercase;                                 
+    color:#FFF;
+    font-size:45px;
+    margin-top:30px;                                          
+    letter-spacing:3px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+
+#content {
+    background: url("images/background.png") top left repeat;
+    margin-top:25px;
+    padding:20px;
+    
+}
+
+/*     SITE WEB      */
+
+#content-cards {
+    max-width:1000px;
+    margin:auto;
+    margin-top:20px;
+    margin-bottom:150px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+h2 {
+    color :#bc2929;
+    font-family: 'Carter One', tahoma;
+    text-transform:uppercase;
+    padding:15px;
+    letter-spacing: 3px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+.linkCard {
+    text-decoration: none;
+}
+
+.card {
+    box-shadow: 0 16px 32px 0 rgba(0,0,0,0.2);
+    transition: 0.3s;
+    width : 300px;
+    height:350px;
+    background-color: #FFF;
+  }
+
+.card p {
+    color: #bc2929;
+    font-size: 20px;
+    margin-top:5px;
+}
+
+.card:hover {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+    background-color: #bc2929;
+}
+
+.card:hover p {
+      color: #FFF;
+}
+  
+.container {
+    padding: 2px 16px;
+}
+  
+
+/*     COMMUNICATION      */
+
+#content-com {
+    max-width:1000px;
+    margin:auto;
+    padding:30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 50px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+.icon-com {
+    width:80%;
+}
+
+.social {
+    margin-top:10px;
+}
+
+.social-icon  {
+    width:15%;
+    padding:2px;
+}
+
+#com-elodie a {
+    text-decoration: none;
+}
+
+/*           FOOTER          */
+
+
+footer {
+    margin-top:50px;
+}
+
+#social {
+    margin-bottom:50px;
+}
+
+#social i {
+    font-size:50px;
+    margin:5px;
+    -webkit-transition-duration: 1.5s;
+    transition-duration: 1.5s;
+}
+
+#social a {
+    text-decoration:none;
+    color: #FFFFFF;
+}
+
+
+/*  A partir d'ici, adaptation du code pour affiche sur tablette et smartphone  */
+
+
+
+
+@media screen and (min-width: 850px) and (max-width: 1120px) {
+
+    #content-cards {
+        max-width:650px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+        margin-bottom:100px;
+    }
+
+    #content-com {
+        max-width:650px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        grid-gap: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 600px) and (max-width: 850px) {
+    
+     #logo {
+        width:200px;
+        height:185px;
+    }
+
+    #content-cards {
+        max-width:300px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin-bottom:100px;
+    }
+
+    #content-com {
+        max-width:400px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+
+}
+
+@media screen and (min-width: 450px) and (max-width: 600px) {
+    
+     #logo {
+        width:150px;
+        height:139px;
+    }
+    
+    h1 {
+        font-size:30px;
+    }
+    
+    
+    header {
+        font-size:14px;
+    }
+
+    #content-cards {
+        max-width:300px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin-bottom:100px;
+    }
+
+    #content-com {
+        max-width:400px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+
+
+}
+
+@media screen and (min-width: 0px) and (max-width: 450px) {
+    
+     #logo {
+        width:100px;
+        height:92px;
+    }
+    
+    h1 {
+        font-size:28px;
+    }
+    
+    header {
+        font-size:12px;
+    }
+
+    h2 {
+        font-size:18px;
+    }
+
+    #content-cards {
+        max-width:300px;
+        margin:auto;
+        padding-top:30px;
+        padding-bottom:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+        margin-bottom:100px;
+    }
+
+    #content-com {
+        max-width:400px;
+        margin:auto;
+        padding:30px;
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-gap: 50px;
+    }
+
+    #social i {
+        font-size:40px;
+
+    }
+
+
+
+}
